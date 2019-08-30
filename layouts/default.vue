@@ -5,7 +5,7 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer absolute height="auto" class="px-2" color="grey lighten-4">
+    <v-footer absolute height="auto" class="px-2">
       <v-layout
         no-gutters
         justify-space-between
