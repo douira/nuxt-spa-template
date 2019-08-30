@@ -1,3 +1,4 @@
+import * as pkg from "./package"
 import getVersion from "./util/version"
 import consola from "consola"
 
@@ -21,7 +22,7 @@ export default {
     buildVersion,
 
     //dev env
-    dev,
+    dev
   },
 
   //Headers of the page
@@ -47,14 +48,12 @@ export default {
   plugins: ["~/plugins/bus"],
 
   axios: {
-    //use given url or default dev url
-    baseURL,
     https: true
   },
 
   vuetify: {
     optionsPath: "~/util/vuetify.options.js",
-    defaultAssets: { font: true, icons: "mdi" },
+    defaultAssets: { font: true, icons: "mdi" }
     //customVariables: ["~/assets/style/variables.scss"],
 
     //always enable to allow changing of SCSS variables
@@ -66,10 +65,7 @@ export default {
     //http request module
     "@nuxtjs/axios"
   ],
-  buildModules: [
-    "@nuxtjs/vuetify"
-    
-  ],
+  buildModules: ["@nuxtjs/vuetify"],
 
   //Build configuration
   modern: true,
