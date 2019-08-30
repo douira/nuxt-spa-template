@@ -14,7 +14,9 @@ export default {
   mode: "spa",
 
   //generate into github pages dir
-  generate: "docs",
+  generate: {
+    dir: "docs"
+  },
 
   //setup dev env
   env: {
