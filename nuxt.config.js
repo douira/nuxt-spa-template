@@ -5,6 +5,16 @@ import consola from "consola"
 //get dev env
 const dev = process.env.NODE_ENV !== "production"
 
+//only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase =
+  process.env.DEPLOY_ENV === "GH_PAGES"
+    ? {
+        router: {
+          base: `/${pkg.name}/`
+        }
+      }
+    : {}
+
 //get version and log
 const buildVersion = getVersion(dev)
 consola.info(`Build version is ${buildVersion.formatted}`)
@@ -13,10 +23,8 @@ export default {
   //allow for static generation
   mode: "spa",
 
-  //generate into github pages dir
-  generate: {
-    dir: "docs"
-  },
+  //use different router when generating for ghpages
+  ...routerBase,
 
   //setup dev env
   env: {

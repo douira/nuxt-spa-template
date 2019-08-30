@@ -1,5 +1,5 @@
 # nuxt-spa-template
-> **nuxt-spa-template** is a template for a simple Nuxt.js project using Vuetify and generating into `/docs` for GitHub Pages
+> **nuxt-spa-template** is a template for a simple Nuxt.js project using Vuetify and generating for GitHub Pages
 
 # Usage
 ## Running from on the command line

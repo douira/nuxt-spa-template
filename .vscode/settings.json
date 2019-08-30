@@ -31,7 +31,6 @@
   "javascript.validate.enable": false,
   "search.exclude": {
     "**/node_modules": true,
-    "**/docs": true,
     "**/dist": true,
     "**/.nuxt": true
   },
@@ -76,7 +75,6 @@
     "typings",
     "**/.nuxt/**",
     "**/dist/**",
-    "**/docs/**",
     "**/static/**"
   ],
   "cSpell.words": [
