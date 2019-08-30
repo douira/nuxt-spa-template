@@ -15,5 +15,5 @@ $ npm run build
 $ npm start
 
 # generate static project for display on github pages
-$ npm run generate
+$ npm run generate-ghpages
 ```
