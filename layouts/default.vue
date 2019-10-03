@@ -7,8 +7,8 @@
     </v-content>
     <v-footer absolute height="auto" class="px-2">
       <v-row no-gutters justify="space-between" class="body-2">
-        <span
-          >&copy;
+        <span>
+          &copy;
           <a :href="buildVersion.packageRepoUrl" target="_blank">
             {{ copyrightRange }}
           </a>
