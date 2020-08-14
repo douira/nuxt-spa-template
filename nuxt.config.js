@@ -40,6 +40,11 @@ export default {
 
   //Headers of the page
   head: {
+    //set the language to english, this also helps hyphenation of text in browsers
+    htmlAttrs: {
+      lang: "en"
+    },
+
     title: "Nuxt SPA Template by douira",
     meta: [
       { charset: "utf-8" },
@@ -51,6 +56,22 @@ export default {
         hid: "description",
         name: "description",
         content: pkg.description
+      }
+    ],
+
+    //link the favicon and the roboto font
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://unpkg.com/@mdi/font@latest/css/materialdesignicons.min.css"
+        //"https://unpkg.com/@mdi/font@5.0.45/css/materialdesignicons.min.css"
       }
     ]
   },
@@ -66,7 +87,8 @@ export default {
 
   vuetify: {
     optionsPath: "~/util/vuetify.options.js",
-    defaultAssets: { font: true, icons: "mdi" }
+    //configure to not include Roboto, and use mdi as the default icons
+    defaultAssets: { font: false, icons: false }
     //customVariables: ["~/assets/style/variables.scss"],
 
     //always enable to allow changing of SCSS variables
