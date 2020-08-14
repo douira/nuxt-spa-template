@@ -20,6 +20,9 @@ const buildVersion = getVersion(dev)
 consola.info(`Build version is ${buildVersion.formatted}`)
 
 export default {
+  //allow telemetry
+  telemetry: true,
+
   //allow for static generation
   mode: "spa",
 
