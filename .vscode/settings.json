@@ -9,7 +9,7 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
-  "prettier.requireConfig": true,
+  "prettier.requireConfig": false,
   "vetur.validation.template": false,
   "vetur.validation.script": false,
   "vetur.format.defaultFormatter.js": "prettier-eslint",
