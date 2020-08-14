@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <v-content class="mb-3">
+    <v-main class="mb-3">
       <v-container>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
     <v-footer absolute height="auto" class="px-2">
       <v-row no-gutters justify="space-between" class="body-2">
         <span>
